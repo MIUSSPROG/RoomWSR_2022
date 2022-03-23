@@ -65,23 +65,23 @@ class MainActivity : AppCompatActivity() {
 //        }
 
 //        many to many (Relation) ----------------
-        val course1 = Course(1, "course1")
-        val course2 = Course(2, "course2")
-        val instructor1 = Instructor(1, "instructor1")
-        val instructor2 = Instructor(2, "instructor2")
-
-        val courseWithInstructor1 = CourseWithInstructor(1, 1)
-        val courseWithInstructor2 = CourseWithInstructor(1, 2)
-        val courseWithInstructor3 = CourseWithInstructor(2, 1)
-
+//        val course1 = Course(1, "course1")
+//        val course2 = Course(2, "course2")
+//        val instructor1 = Instructor(1, "instructor1")
+//        val instructor2 = Instructor(2, "instructor2")
+//
+//        val courseWithInstructor1 = CourseWithInstructor(1, 1)
+//        val courseWithInstructor2 = CourseWithInstructor(1, 2)
+//        val courseWithInstructor3 = CourseWithInstructor(2, 1)
+//
         lifecycleScope.launch {
-            dao.insertCourse(course1)
-            dao.insertCourse(course2)
-            dao.insertInstructor(instructor1)
-            dao.insertInstructor(instructor2)
-            dao.insertCourseWithInstructor(courseWithInstructor1)
-            dao.insertCourseWithInstructor(courseWithInstructor2)
-            dao.insertCourseWithInstructor(courseWithInstructor3)
+//            dao.insertCourse(course1)
+//            dao.insertCourse(course2)
+//            dao.insertInstructor(instructor1)
+//            dao.insertInstructor(instructor2)
+//            dao.insertCourseWithInstructor(courseWithInstructor1)
+//            dao.insertCourseWithInstructor(courseWithInstructor2)
+//            dao.insertCourseWithInstructor(courseWithInstructor3)
             val res = dao.getInstructorsOnCourses()
             Log.d("room", res.toString())
         }
